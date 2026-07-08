@@ -1,0 +1,21 @@
+# ============================================================
+# Grafana — Provisioning de dashboards
+#
+# Este archivo le dice a Grafana dónde buscar dashboards JSON.
+# Los dashboards se versionan como código en el repo de la app
+# (repos/requirement-hr-ia/grafana-dashboards/*.json) y se montan
+# aquí vía volumen — ver el mount de docker-compose.yml.
+# ============================================================
+
+apiVersion: 1
+
+providers:
+  - name: "default"
+    orgId: 1
+    folder: ""
+    type: file
+    disableDeletion: false
+    editable: true
+    options:
+      path: /var/lib/grafana/dashboards
+      foldersFromFilesStructure: false

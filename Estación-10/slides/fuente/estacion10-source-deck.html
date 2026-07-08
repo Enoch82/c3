@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estación 10 - fuente HTML</title>
+  <link rel="stylesheet" href="assets/deck.css">
+</head>
+<body>
+<main class="deck">
+<section id="slide-01" class="slide cover" aria-label="Slide 01 Ciberseguridad">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">ESTACIÓN 10</p>
+    <h1>Ciberseguridad</h1>
+    <p class="subtitle">De POC funcional a pentesting asistido con Shannon</p>
+  </header>
+  <div class="visual">
+      <div class="cover-map">
+        <div class="ring ring-prod"><span>producción</span></div>
+        <div class="ring ring-stage"><span>staging</span></div>
+        <div class="ring ring-poc"><span>POC</span></div>
+        <div class="pulse p1">exposición</div>
+        <div class="pulse p2">valor</div>
+        <div class="pulse p3">aceleración IA</div>
+      </div>
+      <p class="closing-line">Producción sube exposición y valor del objetivo; IA acelera el ritmo de cambio.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>01</span></footer>
+</section>
+<section id="slide-02" class="slide content" aria-label="Slide 02 Hoy aterrizamos seguridad en una demo ejecutable">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">MAPA DE LA SESIÓN</p>
+    <h1>Hoy aterrizamos seguridad en una demo ejecutable</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="act-map">
+        <div class="act"><strong>01</strong><span>Riesgo</span><p>Por qué producción cambia la presión.</p></div>
+        <div class="act"><strong>02</strong><span>Superficies</span><p>Checklist, backlog y reporte.</p></div>
+        <div class="act"><strong>03</strong><span>OWASP</span><p>Lenguaje común para decidir qué mirar.</p></div>
+        <div class="act"><strong>04</strong><span>Shannon</span><p>Ejecución contra local o staging aislado.</p></div>
+      </div>
+      <p class="keypoint">La clase termina con evidencia: hallazgos, PoCs, fixes o tareas verificables.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>02</span></footer>
+</section>
+<section id="slide-03" class="slide diagram" aria-label="Slide 03 La presión cambia cuando el sistema sale al mundo">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">DE POC A PRODUCCIÓN</p>
+    <h1>La presión cambia cuando el sistema sale al mundo</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="timeline pressure">
+        <div class="stage low"><strong>POC funcional</strong><span>Funciona para demostrar valor.</span></div>
+        <div class="stage mid"><strong>Exposición real</strong><span>Usuarios, edge, datos y terceros.</span></div>
+        <div class="stage mid"><strong>Controles mínimos</strong><span>Auth, logs, límites, recovery.</span></div>
+        <div class="stage high"><strong>Producción endurecida</strong><span>Riesgo convertido en trabajo verificable.</span></div>
+      </div>
+      <p class="keypoint">El objetivo no es más seguridad; es reducir rutas de impacto irreversible.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>03</span></footer>
+</section>
+<section id="slide-04" class="slide content" aria-label="Slide 04 Las superficies ordenan la conversación">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">ÍNDICE OPERATIVO</p>
+    <h1>Las superficies ordenan la conversación</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="hub-grid">
+        <div class="hub">superficies<br><span>de riesgo</span></div>
+        <div class="chip primary"><strong>Checklist</strong><span>Qué puede fallar.</span></div>
+        <div class="chip "><strong>Backlog</strong><span>Qué necesita owner, fix y validación.</span></div>
+        <div class="chip "><strong>Reporte</strong><span>Dónde queda evidencia y riesgo residual.</span></div>
+        <div class="chip primary"><strong>Scope de demo</strong><span>Qué tocará Shannon y qué queda fuera.</span></div>
+      </div></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>04</span></footer>
+</section>
+<section id="slide-05" class="slide diagram" aria-label="Slide 05 Empieza por impacto irreversible y amplificación por IA">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">PRIORIZACIÓN</p>
+    <h1>Empieza por impacto irreversible y amplificación por IA</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="matrix">
+        <div class="axis y">impacto irreversible</div>
+        <div class="axis x">amplificación por IA</div>
+        <div class="cell hot"><strong>Exfiltración</strong><span>Datos salen del control del equipo.</span></div>
+        <div class="cell hot"><strong>RCE</strong><span>Código ejecutado fuera del diseño.</span></div>
+        <div class="cell warm"><strong>Privilegios</strong><span>Permisos escalan o se heredan mal.</span></div>
+        <div class="cell hot"><strong>Destrucción</strong><span>Pérdida de datos o continuidad.</span></div>
+        <div class="cell agent"><strong>Agencia</strong><span>El sistema actúa con herramientas.</span></div>
+        <div class="cell agent"><strong>Contexto</strong><span>Memoria y prompts amplifican el fallo.</span></div>
+      </div>
+      <p class="keypoint">La prioridad sube cuando una falla puede actuar, escalar o persistir.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>05</span></footer>
+</section>
+<section id="slide-06" class="slide content" aria-label="Slide 06 OWASP ayuda a nombrar el riesgo y diseñar pruebas">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">TAXONOMÍAS</p>
+    <h1>OWASP ayuda a nombrar el riesgo y diseñar pruebas</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="taxonomy">
+        <div class="tax-col"><strong>Web</strong><span>app</span><span>API</span><span>auth</span><span>config</span><span>logging</span><span>supply chain</span></div>
+        <div class="tax-col"><strong>LLM</strong><span>instrucciones</span><span>datos</span><span>output handling</span><span>agency</span><span>consumo</span></div>
+        <div class="tax-col"><strong>Agentic</strong><span>herramientas</span><span>identidad</span><span>memoria</span><span>contexto</span><span>canales</span></div>
+      </div>
+      <p class="keypoint">Cada hallazgo debe quedar ligado a una categoría y a una verificación.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>06</span></footer>
+</section>
+<section id="slide-07" class="slide diagram" aria-label="Slide 07 Tres capas, un mismo lenguaje de riesgo">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">WEB · LLM · AGENTIC</p>
+    <h1>Tres capas, un mismo lenguaje de riesgo</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="layer-stack">
+        <div class="layer "><strong>Aplicación y API</strong><span>controles base, auth, datos, errores</span></div>
+        <div class="layer "><strong>Sistema LLM</strong><span>prompts, contexto, output handling</span></div>
+        <div class="layer demo"><strong>Agentes y herramientas</strong><span>identidad, permisos, side effects</span></div>
+      </div>
+      <p class="keypoint">Las categorías cambian; la disciplina es la misma: evidencia, fix, verificación.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>07</span></footer>
+</section>
+<section id="slide-08" class="slide content" aria-label="Slide 08 Los controles definen qué puede hacer el agente">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">HARDENING</p>
+    <h1>Los controles definen qué puede hacer el agente</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="control-loop">
+        <div class="control "><strong>Prevención</strong><span>Reducir rutas de abuso antes de exponer el sistema.</span></div>
+        <div class="control "><strong>Detección</strong><span>Logs y alertas para saber qué pasó.</span></div>
+        <div class="control "><strong>Respuesta</strong><span>Triage, contención y recuperación.</span></div>
+        <div class="control demo"><strong>Guardrails</strong><span>Permisos mínimos, credenciales separadas y aprobación para side effects altos.</span></div>
+      </div></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>08</span></footer>
+</section>
+<section id="slide-09" class="slide diagram" aria-label="Slide 09 De POC a producción: prevenir, detectar, recuperar, limitar">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">CONTROLES</p>
+    <h1>De POC a producción: prevenir, detectar, recuperar, limitar</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="lanes">
+        <div class="lane "><strong>Prevenir</strong><span>Auth como política, input validation, hardening runtime, supply chain.</span></div>
+        <div class="lane "><strong>Detectar</strong><span>Logs útiles, trazabilidad, alertas accionables.</span></div>
+        <div class="lane "><strong>Recuperar</strong><span>IR básico, continuidad, evidencias y ejercicios.</span></div>
+        <div class="lane demo"><strong>Limitar agencia</strong><span>Tool allowlists, scopes mínimos, sandbox y aprobación humana.</span></div>
+      </div></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>09</span></footer>
+</section>
+<section id="slide-10" class="slide diagram" aria-label="Slide 10 La automatización acelera el ciclo, no reemplaza el criterio">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">IA APLICADA A SEGURIDAD</p>
+    <h1>La automatización acelera el ciclo, no reemplaza el criterio</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="pipeline">
+        <div class="node "><strong>Código</strong><span>repo</span></div>
+        <div class="node "><strong>Superficie</strong><span>mapa</span></div>
+        <div class="node demo"><strong>Prueba</strong><span>Shannon</span></div>
+        <div class="node "><strong>Evidencia</strong><span>PoC</span></div>
+        <div class="node "><strong>Backlog</strong><span>owner + fix</span></div>
+      </div>
+      <p class="keypoint">Los agentes aceleran análisis y repetición; el equipo decide severidad y cierre.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>10</span></footer>
+</section>
+<section id="slide-11" class="slide demo" aria-label="Slide 11 Shannon prueba explotabilidad con conocimiento del código">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">DEMO</p>
+    <h1>Shannon prueba explotabilidad con conocimiento del código</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="shannon-flow">
+        <div class="input-pair"><span class="pill">repo fuente</span> <span class="pill">URL app viva</span></div>
+        <div class="engine">Shannon<br><span>white-box + explotación dinámica</span></div>
+        <div class="output-pair"><span class="pill">PoC reproducible</span> <span class="pill">hallazgo accionable</span></div>
+      </div>
+      <p class="keypoint demo-point">Es activo: solo local o staging aislado.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>11</span></footer>
+</section>
+<section id="slide-12" class="slide demo" aria-label="Slide 12 Del repo a un hallazgo accionable">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">SHANNON HARDENING SPRINT</p>
+    <h1>Del repo a un hallazgo accionable</h1>
+    
+  </header>
+  <div class="visual">
+      <pre class="terminal">npx @keygraph/shannon setup
+npx @keygraph/shannon start -u http://localhost:3000 -r /path/to/repo</pre>
+      <div class="runbook">
+        <div class="run-step "><strong>01</strong><span>Target aislado</span></div>
+        <div class="run-step demo"><strong>02</strong><span>Scope explícito</span></div>
+        <div class="run-step "><strong>03</strong><span>PoC e impacto</span></div>
+        <div class="run-step "><strong>04</strong><span>Fix verificable</span></div>
+      </div></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>12</span></footer>
+</section>
+<section id="slide-13" class="slide content" aria-label="Slide 13 Un hallazgo sirve cuando cambia el backlog">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">DECISIÓN TÉCNICA</p>
+    <h1>Un hallazgo sirve cuando cambia el backlog</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="questions">
+        <div class="question"><span>?</span><strong>¿Hay PoC funcional?</strong></div>
+        <div class="question"><span>?</span><strong>Qué activo o permiso queda comprometido?</strong></div>
+        <div class="question"><span>?</span><strong>Qué categoría OWASP describe el fallo?</strong></div>
+        <div class="question"><span>?</span><strong>Qué test o comando comprueba el fix?</strong></div>
+        <div class="question"><span>?</span><strong>Qué guardrail habría limitado el daño?</strong></div>
+      </div>
+      <p class="keypoint">Decisión humana: severidad, owner, fix, verificación y cierre.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>13</span></footer>
+</section>
+<section id="slide-14" class="slide task" aria-label="Slide 14 Reporte de seguridad del producto">
+  <div class="topbar" aria-hidden="true"></div>
+  <header>
+    <p class="eyebrow">TAREA</p>
+    <h1>Reporte de seguridad del producto</h1>
+    
+  </header>
+  <div class="visual">
+      <div class="report">
+        <div class="check"><span></span><strong>Top 5 riesgos: impacto, evidencia y prioridad.</strong></div>
+        <div class="check"><span></span><strong>Mapa de superficies: qué se revisó y qué queda fuera.</strong></div>
+        <div class="check"><span></span><strong>Hallazgos: severidad, PoC, fix y verificación.</strong></div>
+        <div class="check"><span></span><strong>Controles: prevención, detección, respuesta y guardrails agenciales.</strong></div>
+        <div class="check"><span></span><strong>Roadmap: quick wins, mediano plazo y cambios estructurales.</strong></div>
+      </div>
+      <p class="closing-box">Seguridad madura cuando el riesgo termina en evidencia y trabajo verificable.</p></div>
+  <footer><span>Hardcore AI by 30X · Estación 10</span><span>14</span></footer>
+</section>
+</main>
+</body>
+</html>
